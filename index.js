@@ -3,7 +3,7 @@
 const puppeteer = require("puppeteer");
 require("dotenv").config();
 const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY_2);
 
 const msgSuccess = {
   to: ["rodrimarchese@gmail.com", "mdsaliva@gmail.com"], // Change to your recipient

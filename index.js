@@ -33,6 +33,7 @@ const password = process.env.PASSWORD;
       width: 1920,
       height: 1080,
     },
+    args: ["--no-sandbox", "--disable-setuid-sandbox"], // Required for running in a Linux environment
   });
   const page = await browser.newPage();
   await page.goto(url);
